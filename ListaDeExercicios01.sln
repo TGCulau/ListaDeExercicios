@@ -1,0 +1,95 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListaDeExercicios01.Exercicio01", "ListaDeExercicios.ConsoleApp\ListaDeExercicios01.Exercicio01.csproj", "{5C2985BA-26BF-4115-9173-3BF92447F86D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListaDeExercicios01.Exercicio02", "ListaDeExercicios01.Exercicio01\ListaDeExercicios01.Exercicio02.csproj", "{3577B3D2-A198-43B1-B3D5-A3EDE710DFB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 01", "Exercicio 01", "{804D7425-19EE-4B98-B70D-91FD407B20EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 02", "Exercicio 02", "{0E38D473-7B8C-4482-BB47-33528E824904}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 03", "Exercicio 03", "{3E92CBF2-9E36-4C6A-A496-58DE0768A05D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 04", "Exercicio 04", "{3FB2B745-162F-4799-A96D-9489148B08C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 05", "Exercicio 05", "{2CBB333B-C650-4FE4-928F-41C8C9C4C91B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 06", "Exercicio 06", "{EAAD10F3-0A88-45C3-9F78-09D7EF57EF15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 07", "Exercicio 07", "{CB7A2A6E-3D13-4D73-8B01-EE2C9E9B9347}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 08", "Exercicio 08", "{E79EE25E-E524-44A6-87B3-B15BB0D784DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 09", "Exercicio 09", "{C4FCC85D-3BEA-48E1-BF36-AC57EAA12F3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 10", "Exercicio 10", "{AF429C2A-C679-4C3C-B407-C2EEF17DBA80}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 11", "Exercicio 11", "{84A1DDFF-2B30-4F40-BA78-1E7190227DBE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 12", "Exercicio 12", "{102B7F9C-27D9-4114-9405-6B7EDF358B90}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 13", "Exercicio 13", "{B574273E-C52F-4FAC-BBEC-7FB4628A0F9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 14", "Exercicio 14", "{895CF045-E5F6-47FC-93EF-B5B7AD9AA098}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 15", "Exercicio 15", "{2196EC0D-F4B4-4597-B39D-1E8D192C7B49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 16", "Exercicio 16", "{9BEF1849-5095-4346-868E-561B0EBB9068}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 17", "Exercicio 17", "{58CB3415-3876-4CEC-ACC5-8514213AD8EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 18", "Exercicio 18", "{1514EF28-43D0-497E-8B83-AA32DF2D3D6F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 19", "Exercicio 19", "{995E0B63-EF25-49E4-9EB2-2049734452CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 20", "Exercicio 20", "{62550950-5D75-4060-9359-295FE2E089CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 21", "Exercicio 21", "{675659D5-6241-48F4-8D61-69482DF72E77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 22", "Exercicio 22", "{1B6A26E5-8E14-43D7-88EC-ED8FB6785812}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 23", "Exercicio 23", "{2C7070D1-CDF8-45DB-97D3-E32A9E525E8F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 24", "Exercicio 24", "{6F5ED431-11CD-41E4-971E-124674A18274}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 25", "Exercicio 25", "{A0884356-FE83-4F63-B252-51AD5D1B1C6B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 26", "Exercicio 26", "{F8C1A6D0-2D1D-4650-A898-ED1C5E18FC39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 27", "Exercicio 27", "{C28E7CDC-B1E1-412F-81A5-5A7F3CB38581}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 28", "Exercicio 28", "{5949D1ED-1AA4-4DE6-AD6A-7C82348A921E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 29", "Exercicio 29", "{C734EBA3-F67C-4AB3-9C35-A7CA61507A65}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicio 30", "Exercicio 30", "{3C16877B-CA79-435A-86EB-7B4A85DF1833}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C2985BA-26BF-4115-9173-3BF92447F86D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C2985BA-26BF-4115-9173-3BF92447F86D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C2985BA-26BF-4115-9173-3BF92447F86D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C2985BA-26BF-4115-9173-3BF92447F86D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3577B3D2-A198-43B1-B3D5-A3EDE710DFB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3577B3D2-A198-43B1-B3D5-A3EDE710DFB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3577B3D2-A198-43B1-B3D5-A3EDE710DFB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3577B3D2-A198-43B1-B3D5-A3EDE710DFB6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5C2985BA-26BF-4115-9173-3BF92447F86D} = {804D7425-19EE-4B98-B70D-91FD407B20EE}
+		{3577B3D2-A198-43B1-B3D5-A3EDE710DFB6} = {0E38D473-7B8C-4482-BB47-33528E824904}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF1E64F6-4AA5-41EF-8586-039AA18EF29D}
+	EndGlobalSection
+EndGlobal
