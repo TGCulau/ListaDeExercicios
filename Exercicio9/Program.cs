@@ -1,4 +1,4 @@
-﻿namespace Exercicio1
+﻿namespace Exercicio9
 {
     internal class Program
     {
@@ -9,9 +9,9 @@
                 Console.ForegroundColor = ConsoleColor.Magenta;
 
                 //Variáveis
-                decimal v, comp, larg, alt;
+                int tdn, aux = 0, aux2;
+                double soma = 0, res;
                 string opm = "";
-                string opu = "";
 
                 //Home
                 Console.Clear();
@@ -19,52 +19,36 @@
                 Console.WriteLine("###                                                                                ###");
                 Console.WriteLine("###              Academia do programador 2024 - Lista de Exercícios 1              ###");
                 Console.WriteLine("###                                                                                ###");
-                Console.WriteLine("###                                   Exercício 1                                  ###");
+                Console.WriteLine("###                                   Exercício 9                                  ###");
                 Console.WriteLine("###                                                                                ###");
-                Console.WriteLine("###                         Volume de uma caixa retangular                         ###");
-                Console.WriteLine("###   Para calcular o volume é necessário fornecer comprimento, largura e altura   ###");
+                Console.WriteLine("###                            Média harmônica das notas                           ###");
                 Console.WriteLine("###                                                                                ###");
                 Console.WriteLine("######################################################################################");
-                
-                //Unidade de medida
-                while (true)
-                {
-                    Console.Write("\nQual unidade de medida deseja usar?\n1. Cm³\n2. M³\nDigite sua opção: ");
-                    opu = Console.ReadLine();
-
-                    //Validação menu
-                    if (opu != "1" && opu != "2")
-                    {
-                        Console.WriteLine("\nOpção inválida, escolha uma opção válida entre 1 e 2. \n\nPrecione qualquer tecla para continuar.\n");
-                        Console.ReadLine();
-                        continue;
-                    }
-                    break;
-                }
 
                 //Dados
-                Console.Write("\nDigite o valor do comprimento: ");
-                comp = Convert.ToDecimal(Console.ReadLine());
+                Console.Write("\nInforme a quantia de notas que serão somadas: ");
+                tdn = Convert.ToInt32(Console.ReadLine());
+                double[] n = new double[tdn];
+                
+                while (aux < tdn)
+                {
+                    aux2 = aux + 1;
+                    Console.Write($"\nInforme o valor da {aux2}ª nota: ");
+                    n[aux] = Convert.ToDouble(Console.ReadLine());
+                    aux++;
+                }
 
-                Console.Write("\nDigite o valor da largura: ");
-                larg = Convert.ToDecimal(Console.ReadLine());
+                //Equação               
+                for (int cont = 0;  cont < tdn;  cont++)
+                {
+                    soma += 1 / n[cont];  
+                }
+                res = tdn / soma;
+                
 
-                Console.Write("\nDigite o valor da altura: ");
-                alt = Convert.ToDecimal(Console.ReadLine());
-
-                //Equação
-                v = comp * larg * alt;
 
                 //Resultado
-                if (opu == "1")
-                {
-                    Console.WriteLine($"\nO volume calculado foi de {v}Cm³.");
-                }
-                else
-                {
-                    Console.WriteLine($"\nO volume calculado foi de {v}M³.");
-                }
-                
+                Console.WriteLine($"\nA média harmônica das notas será {res}.");
 
                 //Menu
                 while (true)
@@ -96,7 +80,7 @@
                     Console.WriteLine("###                                                                                ###");
                     Console.WriteLine("###              Academia do programador 2024 - Lista de Exercícios 1              ###");
                     Console.WriteLine("###                                                                                ###");
-                    Console.WriteLine("###                                   Exercício 1                                  ###");
+                    Console.WriteLine("###                                   Exercício 9                                  ###");
                     Console.WriteLine("###                                                                                ###");
                     Console.WriteLine("###                                    Obrigado                                    ###");
                     Console.WriteLine("###                  Até mais. Precione qualquer tecla para sair.                  ###");

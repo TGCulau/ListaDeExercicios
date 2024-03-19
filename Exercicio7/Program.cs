@@ -1,4 +1,4 @@
-﻿namespace Exercicio1
+﻿namespace Exercicio7
 {
     internal class Program
     {
@@ -9,9 +9,8 @@
                 Console.ForegroundColor = ConsoleColor.Magenta;
 
                 //Variáveis
-                decimal v, comp, larg, alt;
+                decimal sb, tv, pc, st;
                 string opm = "";
-                string opu = "";
 
                 //Home
                 Console.Clear();
@@ -19,52 +18,29 @@
                 Console.WriteLine("###                                                                                ###");
                 Console.WriteLine("###              Academia do programador 2024 - Lista de Exercícios 1              ###");
                 Console.WriteLine("###                                                                                ###");
-                Console.WriteLine("###                                   Exercício 1                                  ###");
+                Console.WriteLine("###                                   Exercício 7                                  ###");
                 Console.WriteLine("###                                                                                ###");
-                Console.WriteLine("###                         Volume de uma caixa retangular                         ###");
-                Console.WriteLine("###   Para calcular o volume é necessário fornecer comprimento, largura e altura   ###");
+                Console.WriteLine("###                               Folha de pagamento                               ###");
                 Console.WriteLine("###                                                                                ###");
                 Console.WriteLine("######################################################################################");
-                
-                //Unidade de medida
-                while (true)
-                {
-                    Console.Write("\nQual unidade de medida deseja usar?\n1. Cm³\n2. M³\nDigite sua opção: ");
-                    opu = Console.ReadLine();
-
-                    //Validação menu
-                    if (opu != "1" && opu != "2")
-                    {
-                        Console.WriteLine("\nOpção inválida, escolha uma opção válida entre 1 e 2. \n\nPrecione qualquer tecla para continuar.\n");
-                        Console.ReadLine();
-                        continue;
-                    }
-                    break;
-                }
 
                 //Dados
-                Console.Write("\nDigite o valor do comprimento: ");
-                comp = Convert.ToDecimal(Console.ReadLine());
+                Console.Write("\nInforme o seu salário base: ");
+                sb = Convert.ToDecimal(Console.ReadLine());
 
-                Console.Write("\nDigite o valor da largura: ");
-                larg = Convert.ToDecimal(Console.ReadLine());
+                Console.Write("\nInforme o seu total de vendas: ");
+                tv = Convert.ToDecimal(Console.ReadLine());
 
-                Console.Write("\nDigite o valor da altura: ");
-                alt = Convert.ToDecimal(Console.ReadLine());
+                Console.Write("\nInforme o percentual de comissão: ");
+                pc = Convert.ToDecimal(Console.ReadLine());
 
                 //Equação
-                v = comp * larg * alt;
+                pc = pc / 100;
+                pc = tv * pc;
+                st = sb + pc;
 
                 //Resultado
-                if (opu == "1")
-                {
-                    Console.WriteLine($"\nO volume calculado foi de {v}Cm³.");
-                }
-                else
-                {
-                    Console.WriteLine($"\nO volume calculado foi de {v}M³.");
-                }
-                
+                Console.WriteLine($"\nO seu salário bruto será de R${st}. Sendo R${pc} apenas de comissões.");
 
                 //Menu
                 while (true)
@@ -96,7 +72,7 @@
                     Console.WriteLine("###                                                                                ###");
                     Console.WriteLine("###              Academia do programador 2024 - Lista de Exercícios 1              ###");
                     Console.WriteLine("###                                                                                ###");
-                    Console.WriteLine("###                                   Exercício 1                                  ###");
+                    Console.WriteLine("###                                   Exercício 7                                  ###");
                     Console.WriteLine("###                                                                                ###");
                     Console.WriteLine("###                                    Obrigado                                    ###");
                     Console.WriteLine("###                  Até mais. Precione qualquer tecla para sair.                  ###");

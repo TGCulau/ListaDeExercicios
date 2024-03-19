@@ -1,4 +1,4 @@
-﻿namespace Exercicio1
+﻿namespace Exercicio12
 {
     internal class Program
     {
@@ -9,27 +9,25 @@
                 Console.ForegroundColor = ConsoleColor.Magenta;
 
                 //Variáveis
-                decimal v, comp, larg, alt;
-                string opm = "";
-                string opu = "";
+                decimal area, comp, larg;
+                string opm, opu;
 
                 //Home
                 Console.Clear();
                 Console.WriteLine("######################################################################################");
                 Console.WriteLine("###                                                                                ###");
-                Console.WriteLine("###              Academia do programador 2024 - Lista de Exercícios 1              ###");
+                Console.WriteLine("###                          Academia do programador 2024                          ###");
                 Console.WriteLine("###                                                                                ###");
-                Console.WriteLine("###                                   Exercício 1                                  ###");
+                Console.WriteLine("###                               Cálculo de terreno                               ###");
                 Console.WriteLine("###                                                                                ###");
-                Console.WriteLine("###                         Volume de uma caixa retangular                         ###");
-                Console.WriteLine("###   Para calcular o volume é necessário fornecer comprimento, largura e altura   ###");
+                Console.WriteLine("###                              Imobiliária Imóbilis                              ###");
                 Console.WriteLine("###                                                                                ###");
                 Console.WriteLine("######################################################################################");
-                
+
                 //Unidade de medida
                 while (true)
                 {
-                    Console.Write("\nQual unidade de medida deseja usar?\n1. Cm³\n2. M³\nDigite sua opção: ");
+                    Console.Write("\nQual unidade de medida deseja usar?\n1. M²\n2. Km²\nDigite sua opção: ");
                     opu = Console.ReadLine();
 
                     //Validação menu
@@ -49,22 +47,19 @@
                 Console.Write("\nDigite o valor da largura: ");
                 larg = Convert.ToDecimal(Console.ReadLine());
 
-                Console.Write("\nDigite o valor da altura: ");
-                alt = Convert.ToDecimal(Console.ReadLine());
-
                 //Equação
-                v = comp * larg * alt;
+                area = comp * larg;
 
                 //Resultado
                 if (opu == "1")
                 {
-                    Console.WriteLine($"\nO volume calculado foi de {v}Cm³.");
+                    Console.WriteLine($"\nO volume calculado foi de {area}M².");
                 }
                 else
                 {
-                    Console.WriteLine($"\nO volume calculado foi de {v}M³.");
+                    Console.WriteLine($"\nO volume calculado foi de {area}Km².");
                 }
-                
+
 
                 //Menu
                 while (true)
@@ -94,9 +89,11 @@
                     Console.Clear();
                     Console.WriteLine("######################################################################################");
                     Console.WriteLine("###                                                                                ###");
-                    Console.WriteLine("###              Academia do programador 2024 - Lista de Exercícios 1              ###");
+                    Console.WriteLine("###                          Academia do programador 2024                          ###");
                     Console.WriteLine("###                                                                                ###");
-                    Console.WriteLine("###                                   Exercício 1                                  ###");
+                    Console.WriteLine("###                               Cálculo de terreno                               ###");
+                    Console.WriteLine("###                                                                                ###");
+                    Console.WriteLine("###                              Imobiliária Imóbilis                              ###");
                     Console.WriteLine("###                                                                                ###");
                     Console.WriteLine("###                                    Obrigado                                    ###");
                     Console.WriteLine("###                  Até mais. Precione qualquer tecla para sair.                  ###");

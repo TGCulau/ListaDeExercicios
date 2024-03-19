@@ -1,4 +1,4 @@
-﻿namespace Exercicio1
+﻿namespace Exercicio2
 {
     internal class Program
     {
@@ -9,9 +9,10 @@
                 Console.ForegroundColor = ConsoleColor.Magenta;
 
                 //Variáveis
-                decimal v, comp, larg, alt;
+                decimal temp, aux2, aux3;
+                decimal aux = 556;
+                int c;
                 string opm = "";
-                string opu = "";
 
                 //Home
                 Console.Clear();
@@ -19,52 +20,24 @@
                 Console.WriteLine("###                                                                                ###");
                 Console.WriteLine("###              Academia do programador 2024 - Lista de Exercícios 1              ###");
                 Console.WriteLine("###                                                                                ###");
-                Console.WriteLine("###                                   Exercício 1                                  ###");
+                Console.WriteLine("###                                   Exercício 2                                  ###");
                 Console.WriteLine("###                                                                                ###");
-                Console.WriteLine("###                         Volume de uma caixa retangular                         ###");
-                Console.WriteLine("###   Para calcular o volume é necessário fornecer comprimento, largura e altura   ###");
+                Console.WriteLine("###                        Converter Fahrenheit em Celsius                         ###");
                 Console.WriteLine("###                                                                                ###");
                 Console.WriteLine("######################################################################################");
-                
-                //Unidade de medida
-                while (true)
-                {
-                    Console.Write("\nQual unidade de medida deseja usar?\n1. Cm³\n2. M³\nDigite sua opção: ");
-                    opu = Console.ReadLine();
-
-                    //Validação menu
-                    if (opu != "1" && opu != "2")
-                    {
-                        Console.WriteLine("\nOpção inválida, escolha uma opção válida entre 1 e 2. \n\nPrecione qualquer tecla para continuar.\n");
-                        Console.ReadLine();
-                        continue;
-                    }
-                    break;
-                }
 
                 //Dados
-                Console.Write("\nDigite o valor do comprimento: ");
-                comp = Convert.ToDecimal(Console.ReadLine());
-
-                Console.Write("\nDigite o valor da largura: ");
-                larg = Convert.ToDecimal(Console.ReadLine());
-
-                Console.Write("\nDigite o valor da altura: ");
-                alt = Convert.ToDecimal(Console.ReadLine());
+                Console.Write("\nDigite a temperatura em Fahrenheit: ");
+                temp = Convert.ToDecimal(Console.ReadLine());
 
                 //Equação
-                v = comp * larg * alt;
+                aux2 = aux / 1000;
+                aux3 = temp - 32;
+                aux3 = aux3 * aux2;
+                c = Convert.ToInt16(aux3);
 
                 //Resultado
-                if (opu == "1")
-                {
-                    Console.WriteLine($"\nO volume calculado foi de {v}Cm³.");
-                }
-                else
-                {
-                    Console.WriteLine($"\nO volume calculado foi de {v}M³.");
-                }
-                
+                Console.WriteLine($"\nA temperatura em Celsius é {c}ºC.");
 
                 //Menu
                 while (true)
@@ -96,7 +69,7 @@
                     Console.WriteLine("###                                                                                ###");
                     Console.WriteLine("###              Academia do programador 2024 - Lista de Exercícios 1              ###");
                     Console.WriteLine("###                                                                                ###");
-                    Console.WriteLine("###                                   Exercício 1                                  ###");
+                    Console.WriteLine("###                                   Exercício 2                                  ###");
                     Console.WriteLine("###                                                                                ###");
                     Console.WriteLine("###                                    Obrigado                                    ###");
                     Console.WriteLine("###                  Até mais. Precione qualquer tecla para sair.                  ###");

@@ -1,4 +1,4 @@
-﻿namespace Exercicio1
+﻿namespace Exercicio18
 {
     internal class Program
     {
@@ -9,9 +9,8 @@
                 Console.ForegroundColor = ConsoleColor.Magenta;
 
                 //Variáveis
-                decimal v, comp, larg, alt;
-                string opm = "";
-                string opu = "";
+                int a, b, c, aux;
+                string opm;
 
                 //Home
                 Console.Clear();
@@ -19,53 +18,71 @@
                 Console.WriteLine("###                                                                                ###");
                 Console.WriteLine("###              Academia do programador 2024 - Lista de Exercícios 1              ###");
                 Console.WriteLine("###                                                                                ###");
-                Console.WriteLine("###                                   Exercício 1                                  ###");
-                Console.WriteLine("###                                                                                ###");
-                Console.WriteLine("###                         Volume de uma caixa retangular                         ###");
-                Console.WriteLine("###   Para calcular o volume é necessário fornecer comprimento, largura e altura   ###");
+                Console.WriteLine("###                                  Exercício 18                                  ###");
                 Console.WriteLine("###                                                                                ###");
                 Console.WriteLine("######################################################################################");
-                
-                //Unidade de medida
+
+                //Dados
+                Console.Write("\nDigite 3 numeros inteiros diferentes para ordenação.\n\nDigite o valor de A: ");
+                a = Convert.ToInt32(Console.ReadLine());
+
                 while (true)
                 {
-                    Console.Write("\nQual unidade de medida deseja usar?\n1. Cm³\n2. M³\nDigite sua opção: ");
-                    opu = Console.ReadLine();
-
-                    //Validação menu
-                    if (opu != "1" && opu != "2")
+                    Console.Write("\nDigite o valor de B: ");
+                    b = Convert.ToInt32(Console.ReadLine());
+                    if (b == a)
                     {
-                        Console.WriteLine("\nOpção inválida, escolha uma opção válida entre 1 e 2. \n\nPrecione qualquer tecla para continuar.\n");
+                        Console.WriteLine("\nOpção inválida, digite um numero diferente do digitado anteriormente. \n\nPrecione qualquer tecla para continuar.\n");
                         Console.ReadLine();
                         continue;
                     }
                     break;
                 }
 
-                //Dados
-                Console.Write("\nDigite o valor do comprimento: ");
-                comp = Convert.ToDecimal(Console.ReadLine());
+                while (true)
+                {
+                    Console.Write("\nDigite o valor de C: ");
+                    c = Convert.ToInt32(Console.ReadLine());
+                    if (c == a)
+                    {
+                        Console.WriteLine("\nOpção inválida, digite um numero diferente do digitado no valor de A. \n\nPrecione qualquer tecla para continuar.\n\n");
+                        Console.ReadLine();
+                        continue;
+                    }
 
-                Console.Write("\nDigite o valor da largura: ");
-                larg = Convert.ToDecimal(Console.ReadLine());
-
-                Console.Write("\nDigite o valor da altura: ");
-                alt = Convert.ToDecimal(Console.ReadLine());
-
-                //Equação
-                v = comp * larg * alt;
+                    if (c == b)
+                    {
+                        Console.WriteLine("\nOpção inválida, digite um numero diferente do digitado no valor de B. \n\nPrecione qualquer tecla para continuar.\n\n");
+                        Console.ReadLine();
+                        continue;
+                    }
+                    break;
+                }
 
                 //Resultado
-                if (opu == "1")
+                if (a > b)
                 {
-                    Console.WriteLine($"\nO volume calculado foi de {v}Cm³.");
+                    aux = a;
+                    a = b;
+                    b = aux;
                 }
-                else
-                {
-                    Console.WriteLine($"\nO volume calculado foi de {v}M³.");
-                }
-                
 
+                if (b > c)
+                {
+                    aux = b;
+                    b = c;
+                    c = aux;
+                }
+
+                if (a > b)
+                {
+                    aux = a;
+                    a = b;
+                    b = aux;
+                }
+
+                Console.WriteLine($"\nA ordem decrescente é {c}, {b} e {a}");
+                
                 //Menu
                 while (true)
                 {
@@ -96,7 +113,7 @@
                     Console.WriteLine("###                                                                                ###");
                     Console.WriteLine("###              Academia do programador 2024 - Lista de Exercícios 1              ###");
                     Console.WriteLine("###                                                                                ###");
-                    Console.WriteLine("###                                   Exercício 1                                  ###");
+                    Console.WriteLine("###                                  Exercício 18                                  ###");
                     Console.WriteLine("###                                                                                ###");
                     Console.WriteLine("###                                    Obrigado                                    ###");
                     Console.WriteLine("###                  Até mais. Precione qualquer tecla para sair.                  ###");
