@@ -1,4 +1,4 @@
-﻿namespace Exercicio1
+﻿namespace Exercicio01
 {
     internal class Program
     {
@@ -14,19 +14,8 @@
                 string opu = "";
 
                 //Home
-                Console.Clear();
-                Console.WriteLine("######################################################################################");
-                Console.WriteLine("###                                                                                ###");
-                Console.WriteLine("###              Academia do programador 2024 - Lista de Exercícios 1              ###");
-                Console.WriteLine("###                                                                                ###");
-                Console.WriteLine("###                                   Exercício 1                                  ###");
-                Console.WriteLine("###                                                                                ###");
-                Console.WriteLine("###                         Volume de uma caixa retangular                         ###");
-                Console.WriteLine("###   Para calcular o volume é necessário fornecer comprimento, largura e altura   ###");
-                Console.WriteLine("###                                                                                ###");
-                Console.WriteLine("######################################################################################");
-                
-                //Unidade de medida
+                NewMethod();
+
                 while (true)
                 {
                     Console.Write("\nQual unidade de medida deseja usar?\n1. Cm³\n2. M³\nDigite sua opção: ");
@@ -64,7 +53,7 @@
                 {
                     Console.WriteLine($"\nO volume calculado foi de {v}M³.");
                 }
-                
+
 
                 //Menu
                 while (true)
@@ -106,6 +95,21 @@
                     break;
                 }
             }
+        }
+
+        private static void NewMethod()
+        {
+            Console.Clear();
+            Console.WriteLine("######################################################################################");
+            Console.WriteLine("###                                                                                ###");
+            Console.WriteLine("###              Academia do programador 2024 - Lista de Exercícios 1              ###");
+            Console.WriteLine("###                                                                                ###");
+            Console.WriteLine("###                                   Exercício 1                                  ###");
+            Console.WriteLine("###                                                                                ###");
+            Console.WriteLine("###                         Volume de uma caixa retangular                         ###");
+            Console.WriteLine("###   Para calcular o volume é necessário fornecer comprimento, largura e altura   ###");
+            Console.WriteLine("###                                                                                ###");
+            Console.WriteLine("######################################################################################");
         }
     }
 }
