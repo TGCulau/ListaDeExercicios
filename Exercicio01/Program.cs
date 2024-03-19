@@ -14,7 +14,7 @@
                 string opu = "";
 
                 //Home
-                NewMethod();
+                Home();
 
                 while (true)
                 {
@@ -97,7 +97,7 @@
             }
         }
 
-        private static void NewMethod()
+        private static void Home()
         {
             Console.Clear();
             Console.WriteLine("######################################################################################");
